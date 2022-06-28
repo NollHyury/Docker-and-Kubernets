@@ -1,0 +1,31 @@
+O que são imagens em um container
+
+quando falmos de containers, imagens são templates (modelos) na qual usamos para criar containers.
+
+Exemplo: Imagine uma aplicação que será desenvolvida com python e banco Postgres e será executada no server web nginx
+
+Podemos então criar 3 containers:
+  - Um container irá usar uma imagem com a linguagem python contendo suporte a se comunicar com o banco de dados postgres
+  - Um container iá usar uma imagem com o servidor de banco de dados postgresSQL
+  - Um container irá usar uma imagem com o servidor Nginx
+
+Atenção: Não confunda as imagens de containser com as imagens de serviço cloud como Amazon AWS, Google Cloud, Microsoft Azure.
+
+
+hub.docker.com (Imagens docker oficiais)
+
+Docker Pull - Baixa a imagem
+Docker RUN - Baixa e cria a imagem (baixa apenas se a imagem não existir)
+
+Um container assim que é criado ele é executado;
+
+-------
+Sistema de arquivos em camada:
+
+--root
+  |-- usr
+    |-- lib
+    |-- sbin
+  |-- media
+  |-- var
+    |-- log
