@@ -1,0 +1,52 @@
+Introdução YAML - Yet Another Markup Language (cirada em 2001)
+
+- É uma linguagem de serialização de dados
+- Serialização é a técnica que permite converter objetos em bytes, colocando-os em série, podendo ser salvos em disco ou enviados via stream (HTTML, Socket e etc)
+
+
+YAML infos:
+  - Se integra com outras linguagens como Python, Java e Ruby e JavaScript
+  - Possui tipos de dados comuns como escalares, listas, arrays e etc...
+  - Comumente utilizada como arquivo de configuração ou armazenamento de dados...
+
+Tem como objetivo:
+  - Ser lida facilmente por humanos
+  - Portátil
+  - Integrar facilmente com outras linguagens
+  - Fácil de implmentar e usar
+
+
+Definir listas (usar traços igual a sintaxe abaixo):
+  roles:
+    - web
+    - dns
+
+Estilos para escrever código:
+  - Block:
+      host1: geek
+      datacenter1:
+        location: São Paulo
+        router: 42
+      roles1:
+        - web
+        - dns
+
+  - Flow:
+      host2: "geek"
+      datacenter2: {
+        location: São Paulo,
+        router: 42
+        }
+      roles2: [web, dns]
+
+
+Mapeamento:
+  Chave e valor:
+  Não podem existir chaves duplicadas 
+
+Sequencia:
+  Lista de sequencia
+
+Se algum valor for inteiro mas não for ser usado como numero para calculos é melhor usar uma string
+
+String com aspas duplas aceita quebra de linha e etc, aspas simples não.
