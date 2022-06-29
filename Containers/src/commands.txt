@@ -24,3 +24,6 @@ docker image rm <id-image>
 
 Inspecionar a imagem
 docker image inspect <id-image>
+
+Executar de forma iterativa comandos no shell de um container
+docker exec -it <contianer-name> sh

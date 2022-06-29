@@ -38,3 +38,11 @@ Containers que não são de serviços, ex: Web servers, Databases e etc, executa
 
 
 Alpine é uma versão do linux menor, simples e seguro!
+
+
+Os conatianers não persistem dados
+  -> Solução para a persistencia de dados em containers são os Volumes, também chamados de Volumes de dados
+
+O que são volumes em um container
+  -> Dado que containers por padrão não persistem dados, temos que usar recursos para contornar esta situação
+  -> Este recurso são os volumes, expondo arquivos e diretórios da nossa máquina para o contianer
