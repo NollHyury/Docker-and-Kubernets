@@ -1,0 +1,26 @@
+Ver a versão
+docker --version
+
+Ver as opções de ajuda
+docker --help
+
+Listar os containers
+docker container ls
+
+Ver as opções de ajuda dos containers
+docker container --help
+
+Ver todos os containers em execução
+docker ps
+
+Ver todos os containers em execução e os parados
+docker ps -a
+
+Listar imagens
+docker image ls
+
+Deletar imagem
+docker image rm <id-image>
+
+Inspecionar a imagem
+docker image inspect <id-image>

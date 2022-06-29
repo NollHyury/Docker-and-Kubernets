@@ -22,10 +22,19 @@ Um container assim que é criado ele é executado;
 -------
 Sistema de arquivos em camada:
 
---root
+|--root
   |-- usr
     |-- lib
     |-- sbin
   |-- media
   |-- var
     |-- log
+
+
+o bootfs é compartilhado entre os containers e o rootfs é isolado por camadas
+o que deve ser comum entre o host e o container é compartilhado via AUFS
+
+Containers que não são de serviços, ex: Web servers, Databases e etc, executam e finalizam em sequencia
+
+
+Alpine é uma versão do linux menor, simples e seguro!
