@@ -38,3 +38,7 @@ Gerar uma imagem a partir de um docker file
 docker build -f <dockerfile-name>
 se for apenas um dockerfile o comando "docker build" já resolve
 docker build -f <dockerfile-name> -t <name/name:tag_name> .
+
+
+Publicar imagens
+docker image push guniversity/servidor_web:v1
