@@ -46,3 +46,15 @@ Os conatianers não persistem dados
 O que são volumes em um container
   -> Dado que containers por padrão não persistem dados, temos que usar recursos para contornar esta situação
   -> Este recurso são os volumes, expondo arquivos e diretórios da nossa máquina para o contianer
+
+Volume é um diretórios da nossa máquina para o contianer que consegue se comunicar através de um mapeamento
+
+
+DockerFile
+  Contem as instruções para o docker criar a imagem/container conforme a nossa necessidade sem a necessidade de 
+  digitarmos sempre as memas instruções
+
+  Dockerfile é um arquivo texto no formato YAML, com instruções usadas para criar imagens/containers
+
+  Docker file também serve para publicarmos a imagem no dockerhub
+

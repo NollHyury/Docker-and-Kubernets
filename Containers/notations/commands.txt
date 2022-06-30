@@ -27,3 +27,9 @@ docker image inspect <id-image>
 
 Executar de forma iterativa comandos no shell de um container
 docker exec -it <contianer-name> sh
+
+Criando containers com Volumes
+docker run --name "servidor_web" -d -p 8080:80 -e NGINX_ETRYPOINT_QUIET_LOGS=1 -v "C:/Users/hyury/documents/html:/usr/share/nginx/html" nginx:1.19.4-alpine
+
+Inspecionar infos do container
+docker inspect <id-container>
