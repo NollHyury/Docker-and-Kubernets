@@ -33,3 +33,8 @@ docker run --name "servidor_web" -d -p 8080:80 -e NGINX_ETRYPOINT_QUIET_LOGS=1 -
 
 Inspecionar infos do container
 docker inspect <id-container>
+
+Gerar uma imagem a partir de um docker file
+docker build -f <dockerfile-name>
+se for apenas um dockerfile o comando "docker build" já resolve
+docker build -f <dockerfile-name> -t <name/name:tag_name> .

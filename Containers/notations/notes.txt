@@ -58,3 +58,6 @@ DockerFile
 
   Docker file também serve para publicarmos a imagem no dockerhub
 
+Se o projeto tiver vários dockers files o padrão é:
+  <name>.dockerfile
+Já se tiver apenas um... o padrão é Dockerfile
