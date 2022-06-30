@@ -61,3 +61,10 @@ DockerFile
 Se o projeto tiver vários dockers files o padrão é:
   <name>.dockerfile
 Já se tiver apenas um... o padrão é Dockerfile
+
+
+Comunicação em uma rede no Docker
+Quando trabalhamos com docker, o docker cria uma rede interna em outa classe, e distribui ips aos containers criados
+
+Docker por padrão usa um driver de rede conhecido como Bridge, sendo assim cada container irá receber uma interface de rede própia e um endereçamento IP
+O Docker dará então uma "ponte" entre o container e o host (nosso computador / servidor)
