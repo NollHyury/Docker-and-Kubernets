@@ -42,3 +42,15 @@ docker build -f <dockerfile-name> -t <name/name:tag_name> .
 
 Publicar imagens
 docker image push guniversity/servidor_web:v1
+
+
+Listar as redes existentes no docker
+docker network ls
+
+
+Verificar as configurações de redes
+docker run --rm alpine:3.12.1 sh -c "ifconfig"
+
+
+Inspecionar network
+docker network inspect bridge
