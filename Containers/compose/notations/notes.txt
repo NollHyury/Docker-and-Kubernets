@@ -1,0 +1,5 @@
+o que é Docker Compose?
+
+Ter apenas um container com tudo não é escalável;
+
+Temos que tratar os containers como serviços;

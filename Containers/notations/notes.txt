@@ -70,3 +70,5 @@ Docker por padrão usa um driver de rede conhecido como Bridge, sendo assim cada
 O Docker dará então uma "ponte" entre o container e o host (nosso computador / servidor)
 
 Comando "sleep 5000" deixa o container esperando, se utilizar o comando "-d", ele irá rodar em background
+
+Sempre ler a documentação das imagens do Docker
