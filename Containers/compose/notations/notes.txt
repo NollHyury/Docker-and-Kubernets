@@ -3,3 +3,25 @@ o que é Docker Compose?
 Ter apenas um container com tudo não é escalável;
 
 Temos que tratar os containers como serviços;
+
+
+Sempre criar toda a infra de trás pra frente, EX:
+
+1. Banco de dados
+2. Aplicações
+3. Balanceador de carga
+
+Docker compose é um arquivo YAML que concentra todos os comando de configurações dos Containers
+
+- Estudas Kubernets
+
+
+Dokcer e Microserviços
+
+Escalabilidade Vertical:
+  Aumenta os componentes da máquina HD, RAM E ETC
+
+Escalabilidade Horizontal:
+  Replica a mesma máquina em outras máquinas com o mesmo serviço N vezes
+
+Segundo Martin Fowler, microserviços é uma abordagem que desenvolve um aplicativo único como uma suite de pequenos serviços
