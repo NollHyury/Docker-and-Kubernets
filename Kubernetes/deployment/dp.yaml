@@ -8,7 +8,7 @@ metadata:
 spec:
   template:
     metadata:
-      name: frontend-pód
+      name: frontend-pod
       labels:
         app: frontend-app
         type: frontend

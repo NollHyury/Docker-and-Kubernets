@@ -41,3 +41,11 @@ kubectl create -f <deployment_file.yaml>
 #Deployment
 Visualizar os deployments:
 kubectl get deployment
+
+#Deployment
+Pagar as informações sobre o deployment:
+kubectl get all
+
+#Deployment
+Descrever as informações do deployment
+kubectl describe deployment <deployment_name>
