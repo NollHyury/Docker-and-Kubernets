@@ -1,0 +1,43 @@
+Get pods:
+kubectl get pods
+
+Create Pod:
+kubectl create -f <file_name.yaml>
+
+Delete Pod:
+kubectl delete pod <pod_name>
+
+Create Replication Controller:
+kubectl create -f <rc_file_name.yaml>
+
+Consultar Replication Controller:
+kubectl get <rc_name>
+
+Create Replica Set:
+kubectl create -f <rs_file_name.yaml>
+
+Consultar Replica Set:
+kubectl get replicaset
+
+#Escalar
+Dando replace no RS:
+kubectl replace -f rs.yaml
+
+#Escalar
+Alterar apenas o parametro "replicas"
+kubectl scale --replicas=6 -f rs.yaml
+
+#Escalar
+Alaterar apenas o parametro replcias buscando por tipo de node e nome do objeto declarado
+kubectl scale --replicas=8 replicaset aplicacao-rs
+
+Descrever o replicaset:
+kubectl describe replicaset <replicaset_name>
+
+#Deployment
+Run Deployment:
+kubectl create -f <deployment_file.yaml>
+
+#Deployment
+Visualizar os deployments:
+kubectl get deployment
