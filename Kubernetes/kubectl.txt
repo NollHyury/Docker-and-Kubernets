@@ -79,3 +79,6 @@ kubectl create namespace frontend --save-config
 or
 kubectl create -f <namespace_file_name.yaml>
 
+#Kubernetes Pod
+Entrar no pod kubernetes:
+kubectl exec -it <pod-name> -- bash

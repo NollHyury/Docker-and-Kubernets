@@ -1,0 +1,6 @@
+kubernetes.default.svc.cluster.local
+
+Kubernetes    -> Nome do serviço
+default       -> Namespace padrão do kubernetes
+svc           -> Serviço (Kind: Service)
+cluster.local -> Nome do cluster
