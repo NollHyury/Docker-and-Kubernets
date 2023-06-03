@@ -39,6 +39,10 @@ Run Deployment:
 kubectl create -f <deployment_file.yaml>
 
 #Deployment
+Delete deployment:
+kubectl delete deployment frontend-dp
+
+#Deployment
 Visualizar os deployments:
 kubectl get deployment
 
@@ -49,3 +53,11 @@ kubectl get all
 #Deployment
 Descrever as informações do deployment
 kubectl describe deployment <deployment_name>
+
+#Deployment
+Aulizar o deployment
+kubectl apply -f deployment/<deployment_file>.yaml
+
+#Scale up and Scale down
+Alterar o num de replicas em runtime
+kubectl scale deployment/<deployment_name> --replicas=<number_of_replicas>

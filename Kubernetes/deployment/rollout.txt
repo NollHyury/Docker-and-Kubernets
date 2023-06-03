@@ -1,0 +1,16 @@
+Consultar o rollout
+kubectl rollout status deployment/<deployment_name>
+
+Consultar o historico de rollout
+kubectl rollout history deployment/<deployment_name>
+
+Registrar a causa da criação quando realizar um deploymnent:
+kubectl.exe create -f <deployment_file_name.yaml> --save-config=true --record=true
+
+Realizar o rollback:
+kubectl rollout undo deployment/<deployment_name>
+-> sempre que o rollback for realizado a revisão que será restaurada assume a posição atual no numro de revisões e o seu número é excluido
+    ex: se estavamos na rev3 e executamos o rollback, a rev2 se tornará rev4 e a rev2 será excluída do histórico
+
+Realizar rollback para uma versão especifica:
+kubectl rollout undo deployment/<deployment_name> --to-revision=<revision_number>

@@ -15,8 +15,10 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: nginx
+          image: nginx:1.19.4
   selector:
     matchLabels:
       type: frontend
-  replicas: 3
+  strategy:
+    type: RollingUpdate #Recreate is another possible option
+  replicas: 4
