@@ -1,3 +1,6 @@
+Get cluster infos
+kubectl cluster-info
+
 Get pods:
 kubectl get pods
 
@@ -61,3 +64,18 @@ kubectl apply -f deployment/<deployment_file>.yaml
 #Scale up and Scale down
 Alterar o num de replicas em runtime
 kubectl scale deployment/<deployment_name> --replicas=<number_of_replicas>
+
+#Network
+Buscar os namespaces existentes:
+kubectl get namespaces || kubectl get ns
+
+#Pods
+Buscar pods por namespace:
+kubectl get pods -n <namespace>
+
+#Network/namespace
+Criar namespaces:
+kubectl create namespace frontend --save-config
+or
+kubectl create -f <namespace_file_name.yaml>
+

@@ -20,5 +20,5 @@ spec:
     matchLabels:
       type: frontend
   strategy:
-    type: RollingUpdate #Recreate is another possible option
+    type: RollingUpdate #Recreate is another possible option 
   replicas: 4
