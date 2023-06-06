@@ -82,3 +82,15 @@ kubectl create -f <namespace_file_name.yaml>
 #Kubernetes Pod
 Entrar no pod kubernetes:
 kubectl exec -it <pod-name> -- bash
+
+#Services
+Criar um serviço:
+kubectl create -f <service_file_name.yaml>
+
+#Services
+Consultar serviços:
+kubectl get services
+
+#Services
+Consultar ip do service:
+minikube service frontend-svc --url
