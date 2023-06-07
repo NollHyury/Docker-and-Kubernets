@@ -94,3 +94,7 @@ kubectl get services
 #Services
 Consultar ip do service:
 minikube service frontend-svc --url
+
+#Deployment
+Criar todos os arquivos de dentro de um diretório
+kubectl create -f <deployment_files_folder> --save-config --record
